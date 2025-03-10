@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+
+/* NAV BAR */
+
+#navbar {
+    background-color: rgb(251, 248, 248);
+    box-shadow: 0 0.01px 20px rgb(255, 255, 255);
+
+}
+
+.navbar-toggler {
+    color: #ff2b00;
+}
+
+#logo img {
+    height: 6vh;
+}
+
+.navbar-nav {
+    margin-left: 10%;
+
+}
+
+.nav-item .nav-link {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #ff2b00;
+    color: #ffff;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #ff2b00;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #ff2b00;
+    color: #ffff;
+}
+
+/* 1st SECTION */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    color: #ffff;
+}
+
+.container h1 {
+    font-size: 45px;
+    padding-top: 20%;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px #000000;
+
+}
+
+.container h4 {
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 2px #ffff;
+    color: #ff2b00;
+}
+
+.container .changecontant::after {
+    content: ' ';
+    font-size: 60px;
+    color: #ff2b00;
+    text-shadow: 0 1px 1px #ffff;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "India";
+    }
+
+    10% {
+        content: "France";
+    }
+
+    20% {
+        content: "Canada";
+    }
+
+    30% {
+        content: "Swizerland";
+    }
+
+    40% {
+        content: "United States";
+    }
+
+    50% {
+        content: "Russia";
+    }
+
+    60% {
+        content: "Japan";
+    }
+
+    70% {
+        content: "Indonesia";
+    }
+
+    80% {
+        content: "Mexico";
+    }
+
+    90% {
+        content: "Thiland";
+    }
+
+    100% {
+        content: "Spain";
+    }
+}
+
+.home .container a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffff;
+    padding: 8px 13px;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-shadow: 0 1px 2px #ff2b00;
+    transition: 0.5s all;
+}
+
+.home .container a:hover {
+    text-shadow: 0 1px 2px #ffffff;
+    color: #000;
+    background-color: #fff200;
+}
+
+@media (max-width: 850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .home .container h4 {
+        background-position: 25px;
+    }
+
+    .home .container h1 {
+        background-position: 25px;
+    }
+
+    .home .container p {
+        background-position: 25px;
+    }
+}
+
+/* 2nd SECTION */
+
+.book {
+    /* height: 100vh; */
+    background-color: aliceblue;
+}
+
+#book h1 {
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#book h1 span {
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+
+.book .row {
+    margin-top: 50px;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #303030;
+}
+
+.book form input {
+    padding: 10px;
+    box-shadow: 0 1px 1px #5a5757;
+}
+
+.book form h6 {
+    color: #ff2b00;
+    text-align: start;
+}
+
+.submit {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff200;
+    padding: 8px 13px;
+    border: solid 1px black;
+    border-radius: 8px;
+    transition: 0.5s all;
+}
+
+.submit:hover {
+    font-weight: 500;
+    text-shadow: 0 1px 2px #ffffff;
+    color: #000;
+    background-color: #ff2b00;
+}
+
+@media(max-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        margin-top: 20px;
+    }
+}
+
+/* 3rd SECTION */
+
+.packages {
+    /* height: 120vh; */
+    background-color: rgb(236, 240, 245);
+}
+
+.packages .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#packages .main-text h1 {
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#packages .main-text h1 span {
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+
+/* .packages .row{
+    margin-top: 50px;
+} */
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px #303030;
+}
+
+.packages .card img {
+    border-radius: 5px;
+}
+
+.card-body {
+    text-align: start;
+    background: transparent;
+}
+
+.card-body h3 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-body p {
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-body .checked {
+    color: #ff2b00;
+}
+
+.star i {
+    font-size: 13px;
+    color: #000;
+}
+
+.star h5 {
+    padding: 5px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.star h5 strong {
+    color: #ff2b00;
+    font-size: 20px;
+}
+
+.star a {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff200;
+    padding: 5px 10px;
+    border: solid 1px black;
+    border-radius: 8px;
+    transition: 0.5s all;
+}
+
+.star a:hover {
+    text-shadow: 0 1px 1px #000;
+    color: #ffffff;
+    background-color: #ff2b00;
+}
+
+
+/* 4th SECTION */
+
+.services {
+    /* height: 100vh; */
+    background-color: rgb(229, 232, 236);
+}
+
+.services .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#services .main-text h1 {
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#services .main-text h1 span {
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+
+#services .container .card {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #303030;
+}
+
+#services .container .card i {
+    font-size: 70px;
+    color: #ff2b00;
+    text-align: center;
+    padding: 20px;
+}
+
+.services .container .card .card-body {
+    text-align: center;
+}
+
+.services .container .card .card-body h3 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.services .container .card .card-body p {
+    text-align: justify;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+/* 5th SECTION */
+
+.gallary {
+    /* height: 100vh; */
+    background-color: rgb(225, 228, 232);
+}
+
+.gallary .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallary .main-text h1 {
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#gallary .main-text h1 span {
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+
+.gallary .container .card {
+    border-radius: 10px;
+}
+
+.gallary .container .card img {
+    box-shadow: 0 2px 5px rgb(27, 26, 26);
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+.gallary .container .card img:hover {
+    transform: scale(1.1);
+}
+
+/* 6th SECTION */
+
+.about {
+    /* height: 65vh; */
+    background-color: aliceblue;
+}
+
+#about .main-text h1 {
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#about .main-text h1 span {
+    padding: 0 5px;
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+.about .container .card img{
+    border-radius: 5px;
+}
+
+.about .container h3 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.about .container p {
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#about-btn {
+    width: 150px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff200;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+    letter-spacing: 2px;
+}
+@media(max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+/* FOOTER SECTION */
+
+#footer{
+    width: 100%;
+    margin-top: 80px;
+    background-color: #f8feff;
+    text-align: center;
+}
+#footer h1 {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#footer h1 span {
+    padding: 0 5px;
+    color: #ff2b00;
+    text-shadow: 0 1px 2px #000;
+}
+#footer p{
+    font-weight: 400;
+}
+.social-links i{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.social-links i:hover{
+    background-color: #ff2b00;
+    color: #000;
+    transform: scaleX(1.1);
+}
+.copyright{
+    margin: 15px;
+}
+.credit{
+    font-weight: 400;
+}
+.credit a{
+    text-decoration: none;
+    color: #ff2b00;
+}
